@@ -1,0 +1,19 @@
+# SimpleAS | made by gluester at GitHub!
+on load:
+  broadcast "&cPlease Wait... SAS is collecting a database of swear words to stop!"
+  set {swearWords} to text from "https://raw.githubusercontent.com/Krakenus-Development/swearDatabase/master/site%3A%20freewebheaders.com/english%20swear%20words"
+  wait 10 seconds
+  set {swearWords::*} to {swearWords} parsed as list
+  wait 10 seconds
+  broadcast "&cSAS has collected the database of swear words! Now protecting the server."
+on chat:
+  loop {swearWords::*}:
+    if loop-value contains message:
+      if message contains "night":
+        if message doesn't contain " nig" or "nig ":
+          stop
+      else:
+        message "&cPlease don't swear!"
+        loop all players:
+          if loop-player has permission "sas.alert":
+            message "&c%player%&c attempted to say %message%&c." to loop-player
