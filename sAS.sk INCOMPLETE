@@ -1,0 +1,4 @@
+# Database 1: BannedWordList.com (curated to remove words it thinks are bad, such as "omg")
+on load:
+  set {BWLdotCOM} to "analassballsackbastardbitchbiatchbloodyblowjobblow jobbollockbollokbonerboobbuggerbumbuttplugclitoriscockcooncuntdickdildodykefagfeckfellatefellatiofelchingfuckf u c kfudgepackerfudge packerflangejizzknobendknob endlabiamuffniggerniggapenispissprickpubepussyscrotumsexshits hitsh1tslutsmegmaspunk
+tittossertwatvaginawankwhore"
