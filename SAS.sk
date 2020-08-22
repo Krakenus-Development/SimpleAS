@@ -1,7 +1,7 @@
 # SimpleAS | made by gluester at GitHub!
 on load:
   broadcast "&cPlease Wait... SAS is collecting a database of swear words to stop!"
-  set {swearWords} to text from "https://raw.githubusercontent.com/Krakenus-Development/swearDatabase/master/site%3A%20freewebheaders.com/english%20swear%20words"
+  set {swearWords} to text from "https://raw.githubusercontent.com/RandomCrapStudios/swearDatabase/master/site%3A%20freewebheaders.com/english%20swear%20words"
   wait 10 seconds
   set {swearWords::*} to {swearWords} parsed as list
   wait 10 seconds
